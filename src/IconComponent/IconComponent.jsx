@@ -41,7 +41,9 @@ export function IconComponent(facebook, instagram, telegram, phone) {
 
 const List = styled.ul`
   display: flex;
+  width: 100%;
   flex-wrap: nowrap;
+  justify-content: space-around;
 `;
 
 const Item = styled.li`
@@ -50,14 +52,8 @@ const Item = styled.li`
   height: 40px;
   border-radius: 50%;
   background-color: aqua;
-  margin-right: 40px;
-  &:last-child {
-    margin-left: 0;
-  }
 `;
 
 const Link = styled.a`
   display: block;
-  /* width: 100%;
-  height: 100%; */
 `;
