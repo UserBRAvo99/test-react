@@ -27,12 +27,16 @@ export function IconComponent({ facebook, instagram, telegram, phone }) {
         </Link>
       </Item>
       <Item>
-        <Link href={telegram} target="blank" rel="noopener noreferrer">
+        <Link href={telegram}>
           <FaPaperPlane className={scss.icon} />
         </Link>
       </Item>
       <Item>
-        <Link tell={phone} target="blank" rel="noopener noreferrer">
+        <Link
+          href={"tel:" + { phone }}
+          target="blank"
+          rel="noopener noreferrer"
+        >
           <FaPhoneAlt className={scss.icon} />
         </Link>
       </Item>
