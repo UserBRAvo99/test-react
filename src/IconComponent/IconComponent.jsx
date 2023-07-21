@@ -13,7 +13,6 @@ const socLink = {
 };
 
 export function IconComponent({ facebook, instagram, telegram, phone }) {
-  console.log(facebook);
   return (
     <List>
       <Item>
@@ -27,16 +26,12 @@ export function IconComponent({ facebook, instagram, telegram, phone }) {
         </Link>
       </Item>
       <Item>
-        <Link href={telegram}>
+        <Link href={telegram} target="blank" rel="noopener noreferrer">
           <FaPaperPlane className={scss.icon} />
         </Link>
       </Item>
       <Item>
-        <Link
-          href={"tel:" + { phone }}
-          target="blank"
-          rel="noopener noreferrer"
-        >
+        <Link href={"tel:" + phone}>
           <FaPhoneAlt className={scss.icon} />
         </Link>
       </Item>
