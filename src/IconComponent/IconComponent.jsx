@@ -12,26 +12,27 @@ const socLink = {
   teleg: "https://web.telegram.org/",
 };
 
-export function IconComponent(facebook, instagram, telegram, phone) {
+export function IconComponent({ facebook, instagram, telegram, phone }) {
+  console.log(facebook);
   return (
     <List>
       <Item>
-        <Link href={socLink.face} target="blank" rel="noopener noreferrer">
+        <Link href={facebook} target="blank" rel="noopener noreferrer">
           <TiSocialFacebook className={scss.icon} />
         </Link>
       </Item>
       <Item>
-        <Link href={socLink.inst} target="blank" rel="noopener noreferrer">
+        <Link href={instagram} target="blank" rel="noopener noreferrer">
           <TiSocialInstagram className={scss.icon} />
         </Link>
       </Item>
       <Item>
-        <Link href={socLink.tel} target="blank" rel="noopener noreferrer">
+        <Link href={telegram} target="blank" rel="noopener noreferrer">
           <FaPaperPlane className={scss.icon} />
         </Link>
       </Item>
       <Item>
-        <Link href={socLink.face} target="blank" rel="noopener noreferrer">
+        <Link tell={phone} target="blank" rel="noopener noreferrer">
           <FaPhoneAlt className={scss.icon} />
         </Link>
       </Item>
