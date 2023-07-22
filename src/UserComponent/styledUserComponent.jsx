@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { IconComponent } from "../IconComponent";
+import { IconComponent } from "../IconComponent/IconComponent";
 
 import cynologists from "../Data/data";
 
@@ -35,7 +35,7 @@ export default UserComponent;
 const Section = styled.section`
   display: flex;
   width: 280px;
-  min-height: 500px;
+  min-height: 100px;
   flex-direction: column;
   align-items: center;
   background-color: pink;
