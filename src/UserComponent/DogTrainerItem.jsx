@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
-import { IconComponent } from "../IconComponent/IconComponent";
+import { IconComponent } from "../IconComponent/IconSoc";
 
-import cynologists from "../Data/data";
+import dogTrainerData from "../Data/data";
 
 function UserComponent() {
   const {
@@ -14,7 +14,7 @@ function UserComponent() {
       name,
       profession,
     },
-  } = cynologists;
+  } = dogTrainerData;
   return (
     <Section>
       <Img src={foto} alt="user" />

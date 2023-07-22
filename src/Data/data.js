@@ -1,6 +1,6 @@
 import fotoLena from "./Olenka.jpg";
 
-const cynologists = {
+const dogTrainerData = {
   lena: {
     linkFacebook: "https://www.facebook.com/profile.php?id=100008502870426",
     linkInstagram: "https://www.instagram.com/olena__bondarchuk",
@@ -12,4 +12,4 @@ const cynologists = {
   },
 };
 
-export default cynologists;
+export default dogTrainerData;
