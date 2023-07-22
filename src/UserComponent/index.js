@@ -1,3 +1,3 @@
-import UserComponent from "./styledUserComponent";
+import UserComponent from "./DogTrainerItem";
 
 export default UserComponent;
