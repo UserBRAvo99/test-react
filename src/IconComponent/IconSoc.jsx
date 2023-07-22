@@ -102,7 +102,7 @@ const Link = styled.a`
   height: 40px;
   cursor: pointer;
 
-  background: red;
+  background: var(--bg-color-dog-trainer-icon);
   color: yellowgreen;
 
   &:hover,

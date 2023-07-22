@@ -1,4 +1,16 @@
 :root {
-  /* List team dog trainer (item) */
+  /* Text color */
+  --basic-text-color: #000000;
+  --second-text-color: #000000;
+  /* Icon color and bg */
+  /* w */
   --color-dog-trainer-icon: #4287f5;
+  --bg-color-dog-trainer-icon: #4287f5;
+  --hover-color-dog-trainer-icon: #4287f5;
+  --hover-bg-color-dog-trainer-icon: #4287f5;
+  /* d */
+  --color-dog-trainer-icon: #4287f5;
+  --bg-color-dog-trainer-icon: #4287f5;
+  --hover-color-dog-trainer-icon: #4287f5;
+  --hover-bg-color-dog-trainer-icon: #4287f5;
 }
