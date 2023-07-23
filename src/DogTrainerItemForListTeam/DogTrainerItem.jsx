@@ -38,8 +38,9 @@ const Section = styled.section`
   min-height: 100px;
   flex-direction: column;
   align-items: center;
-  background-color: pink;
-  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: solid 1px black;
 `;
 
 const Img = styled.img`

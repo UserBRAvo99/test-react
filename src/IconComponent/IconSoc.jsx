@@ -1,8 +1,12 @@
 import React from "react";
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 
 import { TiSocialFacebook, TiSocialInstagram } from "react-icons/ti";
 import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
+
+import "../VariableColor/var.css";
+
+let colorTrue = 1;
 
 export function IconSocComponent({ facebook, instagram, telegram, phone }) {
   return (
@@ -42,6 +46,7 @@ const Item = styled.li`
   display: block;
   width: 40px;
   height: 40px;
+  padding-bottom: 20px;
 
   a {
     svg {
@@ -103,11 +108,52 @@ const Link = styled.a`
   cursor: pointer;
 
   background: var(--bg-color-dog-trainer-icon);
-  color: yellowgreen;
+  color: var(--color-dog-trainer-icon);
 
   &:hover,
   &:focus {
-    background-color: firebrick;
-    color: white;
+    background-color: var(--hover-color-dog-trainer-icon);
+    color: var(--hover-bg-color-dog-trainer-icon);
   }
 `;
+
+// const LinkTest = styled.a`
+//   ${(props) => {
+//     if (props.t === "dark") {
+//       return css`
+//         display: block;
+//         border-radius: 50%;
+//         position: absolute;
+//         width: 40px;
+//         height: 40px;
+//         cursor: pointer;
+
+//         background: var(--color-dog-trainer-icon);
+//         color: var(--color-dog-trainer-icon-dark);
+
+//         &:hover,
+//         &:focus {
+//           background-color: var(--hover-color-dog-trainer-icon);
+//           color: var(--color-dog-trainer-icon-dark);
+//         }
+//       `;
+//     }
+//     return css`
+//       display: block;
+//       border-radius: 50%;
+//       position: absolute;
+//       width: 40px;
+//       height: 40px;
+//       cursor: pointer;
+
+//       background: var(--bg-color-dog-trainer-icon);
+//       color: var(--color-dog-trainer-icon);
+
+//       &:hover,
+//       &:focus {
+//         background-color: var(--hover-color-dog-trainer-icon);
+//         color: var(--hover-bg-color-dog-trainer-icon);
+//       }
+//     `;
+//   }}
+// `;
