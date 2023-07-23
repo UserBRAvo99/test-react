@@ -1,9 +1,9 @@
 import { styled } from "styled-components";
-import { IconComponent } from "../IconComponent/IconSoc";
+import { IconSocComponent } from "../IconComponent/IconSoc";
 
 import dogTrainerData from "../Data/data";
 
-function UserComponent() {
+function TeamComponent() {
   const {
     lena: {
       linkFacebook,
@@ -20,7 +20,7 @@ function UserComponent() {
       <Img src={foto} alt="user" />
       <NameTitle>{name}</NameTitle>
       <Paragraph>{profession}</Paragraph>
-      <IconComponent
+      <IconSocComponent
         facebook={linkFacebook}
         instagram={linkInstagram}
         telegram={linkTelegram}
@@ -30,7 +30,7 @@ function UserComponent() {
   );
 }
 
-export default UserComponent;
+export default TeamComponent;
 
 const Section = styled.section`
   display: flex;

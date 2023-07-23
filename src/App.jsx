@@ -1,8 +1,8 @@
 import "./App.css";
-import UserComponent from "./UserComponent/DogTrainerItem";
+import TeamComponent from "./DogTrainerItemForListTeam/DogTrainerItem";
 
 function App() {
-  return <UserComponent />;
+  return <TeamComponent />;
 }
 
 export default App;

@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 import { TiSocialFacebook, TiSocialInstagram } from "react-icons/ti";
 import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
 
-export function IconComponent({ facebook, instagram, telegram, phone }) {
+export function IconSocComponent({ facebook, instagram, telegram, phone }) {
   return (
     <List>
       <Item>
