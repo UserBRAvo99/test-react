@@ -1,12 +1,12 @@
 import React from "react";
-import { css, styled } from "styled-components";
+import { styled } from "styled-components";
 
 import { TiSocialFacebook, TiSocialInstagram } from "react-icons/ti";
 import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
 
 import "../VariableColor/var.css";
 
-let colorTrue = 1;
+// let colorTrue = 1;
 
 export function IconSocComponent({ facebook, instagram, telegram, phone }) {
   return (
