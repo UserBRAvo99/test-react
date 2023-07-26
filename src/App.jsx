@@ -1,10 +1,8 @@
 import React from "react";
 
-import HeaderMobile from "./Header/HeaderMobile";
-// import TeamComponent from "./DogTrainerItemForListTeam/DogTrainerItem";
+import HeaderMobile from "./HeaderMobile/HeaderMobile";
 
 import "./App.css";
-// import "./Variable/var.css";
 
 function App() {
   return (
