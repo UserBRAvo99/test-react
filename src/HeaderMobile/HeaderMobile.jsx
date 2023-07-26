@@ -13,11 +13,19 @@ function HeaderMobile() {
   function handleClick(event) {
     if (event.currentTarget.tagName === "BUTTON") {
       toggleMenuOpen();
+      scroll();
     }
   }
 
   function toggleMenuOpen() {
     setMobileMenuOpen(!mobileMenuOpen);
+  }
+  function scroll() {
+    if (!mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+      return;
+    }
+    document.body.style.overflow = "scroll";
   }
 
   return (
