@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
 import { styled } from "styled-components";
+import "animate.css";
 
+import ButtonOpenMobileMenu from "./ButtonOpenMobileMenu";
 import MobileMenuSlide from "./MobileMenu";
 
-import { BsChevronDoubleLeft } from "react-icons/bs";
-import { IoPaw } from "react-icons/io5";
+import LogoPaw from "./Logo";
 
 function HeaderMobile() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,19 +15,15 @@ function HeaderMobile() {
     if (event.currentTarget.tagName === "BUTTON") {
       toggleMenuOpen();
     }
-
-    function toggleMenuOpen() {
-      setMobileMenuOpen(!mobileMenuOpen);
-    }
   }
+  function toggleMenuOpen() {
+    setMobileMenuOpen(!mobileMenuOpen);
+  }
+
   return (
     <Header>
-      <Logo>
-        <IoPaw />
-      </Logo>
-      <ButtonOpenMenu onClick={handleClick}>
-        <BsChevronDoubleLeft />
-      </ButtonOpenMenu>
+      <LogoPaw />
+      <ButtonOpenMobileMenu onClick={handleClick} />
       <MobileMenuSlide onClick={handleClick} isOpen={mobileMenuOpen} />
     </Header>
   );
@@ -37,28 +34,7 @@ export default HeaderMobile;
 const Header = styled.header`
   position: relative;
   display: flex;
-  width: 100vw;
+  width: 100%;
   padding-top: 10px;
   justify-content: space-between;
-`;
-
-const Logo = styled.div`
-  width: 40px;
-  height: 40px;
-  & svg {
-    width: 40px;
-    height: 40px;
-  }
-`;
-
-const ButtonOpenMenu = styled.button`
-  display: block;
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: inherit;
-  & svg {
-    width: 40px;
-    height: 40px;
-  }
 `;
