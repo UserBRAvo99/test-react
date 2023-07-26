@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import { styled } from "styled-components";
-import photoHeaderMobile from "../Data/dog.png";
 
 import ButtonOpenMobileMenu from "./ButtonOpenMobileMenu";
 import MobileMenuSlide from "./MobileMenu";
@@ -28,7 +27,6 @@ function HeaderMobile() {
         <ButtonOpenMobileMenu onClick={handleClick} />
         <MobileMenuSlide onClick={handleClick} isOpen={mobileMenuOpen} />
       </Header>
-      <ImgHeader src={photoHeaderMobile} alt="" />
     </>
   );
 }
@@ -36,19 +34,10 @@ function HeaderMobile() {
 export default HeaderMobile;
 
 const Header = styled.header`
+  z-index: 2;
   position: absolute;
   display: flex;
   width: 100%;
   height: auto;
   justify-content: space-between;
-  /* background-image: url(${photoHeaderMobile});
-  background-size: contain;
-  background-repeat: no-repeat; */
-`;
-
-const ImgHeader = styled.img`
-  z-index: -1;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
 `;

@@ -29,6 +29,7 @@ export default MobileMenuSlide;
 
 const MobileMenu = styled.div`
   position: absolute;
+  z-index: 4;
   width: 100vw;
   height: 100vh;
   padding: 70px 10px 10px 10px;

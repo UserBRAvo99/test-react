@@ -10,7 +10,7 @@ function LogoPaw() {
 }
 
 const Logo = styled.div`
-  z-index: 2;
+  z-index: 5;
   width: 40px;
   height: 40px;
   svg {
