@@ -6,10 +6,10 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <body>
       <HeaderMobile />
       {/* <TeamComponent /> */}
-    </div>
+    </body>
   );
 }
 

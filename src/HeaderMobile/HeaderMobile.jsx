@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { styled } from "styled-components";
-import "animate.css";
+import photoHeaderMobile from "../Data/dog.png";
 
 import ButtonOpenMobileMenu from "./ButtonOpenMobileMenu";
 import MobileMenuSlide from "./MobileMenu";
@@ -21,20 +21,34 @@ function HeaderMobile() {
   }
 
   return (
-    <Header>
-      <LogoPaw />
-      <ButtonOpenMobileMenu onClick={handleClick} />
-      <MobileMenuSlide onClick={handleClick} isOpen={mobileMenuOpen} />
-    </Header>
+    <>
+      <Header>
+        <LogoPaw />
+
+        <ButtonOpenMobileMenu onClick={handleClick} />
+        <MobileMenuSlide onClick={handleClick} isOpen={mobileMenuOpen} />
+      </Header>
+      <ImgHeader src={photoHeaderMobile} alt="" />
+    </>
   );
 }
 
 export default HeaderMobile;
 
 const Header = styled.header`
-  position: relative;
+  position: absolute;
   display: flex;
   width: 100%;
-  padding-top: 10px;
+  height: auto;
   justify-content: space-between;
+  /* background-image: url(${photoHeaderMobile});
+  background-size: contain;
+  background-repeat: no-repeat; */
+`;
+
+const ImgHeader = styled.img`
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 `;
