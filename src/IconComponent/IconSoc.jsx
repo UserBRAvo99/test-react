@@ -6,8 +6,6 @@ import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
 
 import "../VariableColor/var.css";
 
-// let colorTrue = 1;
-
 export function IconSocComponent({ facebook, instagram, telegram, phone }) {
   return (
     <List>
