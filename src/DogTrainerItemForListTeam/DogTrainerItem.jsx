@@ -1,11 +1,12 @@
 import { styled } from "styled-components";
+import { nanoid } from "nanoid";
 import { IconSocComponent } from "../IconComponent/IconSoc";
 
 import dogTrainerData from "../Data/data";
 
 function TeamComponent() {
-  const {
-    lena: {
+  return dogTrainerData.map(
+    ({
       linkFacebook,
       linkInstagram,
       linkTelegram,
@@ -13,20 +14,21 @@ function TeamComponent() {
       foto,
       name,
       profession,
-    },
-  } = dogTrainerData;
-  return (
-    <Section>
-      <Img src={foto} alt="user" />
-      <NameTitle>{name}</NameTitle>
-      <Paragraph>{profession}</Paragraph>
-      <IconSocComponent
-        facebook={linkFacebook}
-        instagram={linkInstagram}
-        telegram={linkTelegram}
-        phone={tel}
-      />
-    </Section>
+    }) => {
+      return (
+        <Section key={nanoid()}>
+          <Img src={foto} alt="user" />
+          <NameTitle>{name}</NameTitle>
+          <Paragraph>{profession}</Paragraph>
+          <IconSocComponent
+            facebook={linkFacebook}
+            instagram={linkInstagram}
+            telegram={linkTelegram}
+            phone={tel}
+          />
+        </Section>
+      );
+    }
   );
 }
 

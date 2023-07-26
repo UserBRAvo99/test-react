@@ -15,6 +15,7 @@ function HeaderMobile() {
       toggleMenuOpen();
     }
   }
+
   function toggleMenuOpen() {
     setMobileMenuOpen(!mobileMenuOpen);
   }

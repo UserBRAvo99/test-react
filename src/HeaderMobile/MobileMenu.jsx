@@ -5,7 +5,7 @@ function MobileMenuSlide({ onClick, isOpen }) {
   return (
     <MobileMenu open={isOpen}>
       <ButtonClose onClick={onClick} />
-      <nav>
+      {/* <nav>
         <ul>
           <li>
             <a href="#">Про нас</a>
@@ -20,7 +20,7 @@ function MobileMenuSlide({ onClick, isOpen }) {
             <a href="#">Ще щось</a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </MobileMenu>
   );
 }
@@ -33,7 +33,6 @@ const MobileMenu = styled.div`
   width: 100vw;
   height: 100vh;
   padding: 70px 10px 10px 10px;
-
   background-color: pink;
   top: 0;
   left: 0;

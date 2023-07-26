@@ -8,10 +8,10 @@ import "./App.css";
 
 function App() {
   return (
-    <body>
+    <>
       <HeaderMobile />
       <Main />
-    </body>
+    </>
   );
 }
 

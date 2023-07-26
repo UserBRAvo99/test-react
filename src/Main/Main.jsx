@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-// import TeamComponent from "../DogTrainerItemForListTeam/DogTrainerItem";
+import TeamComponent from "../DogTrainerItemForListTeam/DogTrainerItem";
 import photoHeaderMobile from "../Data/dog.png";
 
 function Main() {
@@ -14,7 +14,7 @@ function Main() {
           <p>кінологічна спільнота</p>
         </HeroTitleWrapper>
       </Hero>
-      {/* <TeamComponent /> */}
+      <TeamComponent />
     </MainTag>
   );
 }
